@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="/style.css" />
+		<link rel="stylesheet" href="css/landing.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/fontawesome.min.css" integrity="sha512-Rcr1oG0XvqZI1yv1HIg9LgZVDEhf2AHjv+9AuD1JXWGLzlkoKDVvE925qySLcEywpMAYA/rkg296MkvqBF07Yw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	<body>
+		<div class="landing">
+			<div class="title typing">BUFFBUNNY</div>
+			<div class="line"></div>
+			<div class="content">
+				<button class="btn" id="documentsButton">Documents</button>
+				<button class="btn success" id="connectButton">Connect</button>
+				<div class="images">
+					<div>
+						<div style="background-image: url(/images/spiderman.jpg);"></div>
+					</div>
+					<div>
+						<div style="background-image: url(comics-book\images\TheFlash.jpg);"></div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="documents">
+			<div>
+				<div class="title">Documents</div>
+				<div class="content">
+					<p>ᴡᴇ ᴘʀᴇꜱᴇɴᴛ ʏᴏᴜ ᴡɪᴛʜ ʙᴜꜰꜰ ʙᴜɴɴʏ ʜᴏᴏᴅɪᴇꜱ. <br>
+						ᴛʜᴇʀᴇ ᴀʀᴇ ᴏɴʟʏ 200 ʜᴏᴏᴅɪᴇꜱ ᴛᴏ ʙᴇ ᴍɪɴᴛᴇᴅ ᴘʀɪᴄᴇᴅ ᴀᴛ 0.2 SOLANA <br>
+						ᴛʜᴇʏ ᴄᴀɴ ʙᴇ ᴍɪɴᴛᴇᴅ ᴏɴ ꜱᴏʟꜱᴇᴀ</p>
+			<a href='https://solsea.io/collection/629ec0d8fbdfa8e14734c41d'>
+			<button class="btn"> Hoodies </button> </a>
+					<p>ʙᴇɴᴇꜰɪᴛꜱ ᴏꜰ ʜᴏʟᴅɪɴɢ ᴀ ʜᴏᴏᴅɪᴇꜱ <br>
+						1. 1% ꜰʀᴏᴍ ᴛʜᴇ ᴛᴇᴀᴍ ᴛᴏᴋᴇɴ ᴡɪʟʟ ʙᴇ ᴅɪꜱᴛʀɪʙᴜᴛᴇᴅ ᴛᴏ ᴛʜᴇ ʜᴏʟᴅᴇʀꜱ<br>
+						2.ʀᴇᴀʟ ʜᴏᴏᴅɪᴇꜱ ᴡɪʟʟ ʙᴇ ᴅᴇʟɪᴠᴇʀᴇᴅ ᴛᴏ ᴛʜᴇ ᴏᴡɴᴇʀ <br>
+						3.ᴛᴏᴘ 16 ʜᴏᴏᴅɪᴇꜱ ʜᴏʟᴅᴇʀꜱ HOLDING 5 OR MORE ᴡɪʟʟ ʙᴇ ɢɪᴠᴇɴ ꜱᴘᴏᴛꜱ ᴏɴ ʜᴀʟʟ ᴏꜰ ꜰᴀᴍᴇ.<br>
+						4.ᴅɪꜱᴄᴏᴜɴᴛ ᴏɴ ᴍᴇʀᴄʜ ꜱᴛᴏʀᴇ.</p>
+					<p></p>
+					<br/>
+					<br/>
+					<p>
+				</div>
+			</div>
+			<div class="back-button">
+				Back
+				<div class="back-icon"></div>
+			</div>
+		</div>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="js/jquerypp.custom.js"></script>
+		<script src="js/jquery.bookblock.js"></script>
+		<script src="js/loading.js"></script>
+		<script src="js/landing.js"></script>
+		<script src="js/tooltip.js"></script>
+		<script src="js/typing.js"></script>
+		<script>
+			const documents = document.querySelector('.documents');
+			const documentsContent = documents.querySelector('.content');
+			documentsContent.querySelectorAll('p').forEach((p, i) => {
+				p.style.transitionDelay = (0.75 + 0.25 * i) + 's';
+			});
+		</script>
+	</body>
+</html>
